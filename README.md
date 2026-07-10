@@ -2,6 +2,8 @@
 
 Portfólio profissional moderno, neutro e responsivo, criado para apresentar projetos, habilidades, formação, trajetória e contato de Matheus Foganholi com foco em clareza, confiança e bom acabamento visual.
 
+Site público: <https://foganholi.github.io/portfolio-matheus-foganholi/>
+
 ## Tecnologias
 
 - React, TypeScript e Vite

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://portfolio-matheus-foganholi.vercel.app/sitemap.xml
+Sitemap: https://foganholi.github.io/portfolio-matheus-foganholi/sitemap.xml
