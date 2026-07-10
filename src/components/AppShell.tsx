@@ -39,16 +39,12 @@ export function AppShell({ children, locale, theme, t, onThemeToggle, onLocaleTo
       </a>
       <header className="topbar">
         <a className="brand" href="#home" aria-label="Matheus Foganholi">
-          <span className="mf-mark" aria-hidden="true">
-            <span>M</span>
-            <span>F</span>
-          </span>
+          <span className="mf-mark" aria-hidden="true">MF</span>
           <span>Matheus Foganholi</span>
         </a>
         <nav aria-label="Navegação principal">
-          {navItems.map(([href, label], index) => (
+          {navItems.map(([href, label]) => (
             <a key={href} href={`#${href}`}>
-              <small>{String(index + 1).padStart(2, '0')}</small>
               {label}
             </a>
           ))}

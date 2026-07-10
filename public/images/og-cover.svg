@@ -1,26 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Portfólio Matheus Foganholi">
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
-      <stop stop-color="#030812"/>
-      <stop offset="0.55" stop-color="#091220"/>
-      <stop offset="1" stop-color="#1a1740"/>
+      <stop stop-color="#18181b"/>
+      <stop offset="0.55" stop-color="#27272a"/>
+      <stop offset="1" stop-color="#304b58"/>
     </linearGradient>
     <linearGradient id="line" x1="0" x2="1">
-      <stop stop-color="#77ddff"/>
-      <stop offset="1" stop-color="#37d5e2"/>
+      <stop stop-color="#f4f4f5"/>
+      <stop offset="1" stop-color="#7d97a3"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <g opacity=".18" stroke="#8ea1b5">
+  <g opacity=".16" stroke="#a1a1aa">
     <path d="M0 90h1200M0 180h1200M0 270h1200M0 360h1200M0 450h1200M0 540h1200"/>
     <path d="M120 0v630M240 0v630M360 0v630M480 0v630M600 0v630M720 0v630M840 0v630M960 0v630M1080 0v630"/>
   </g>
-  <rect x="116" y="92" width="968" height="446" rx="28" fill="#091220" stroke="#3d5772" stroke-width="2"/>
-  <circle cx="160" cy="136" r="10" fill="#77ddff"/>
-  <circle cx="194" cy="136" r="10" fill="#37d5e2"/>
-  <circle cx="228" cy="136" r="10" fill="#8a6fff"/>
-  <text x="156" y="246" fill="#eef7ff" font-family="Arial, sans-serif" font-size="58" font-weight="700">Matheus Foganholi</text>
-  <text x="156" y="318" fill="#8ea1b5" font-family="Arial, sans-serif" font-size="30">Java • Spring Boot • APIs REST • SQL</text>
+  <rect x="116" y="92" width="968" height="446" rx="28" fill="#27272a" stroke="#52525b" stroke-width="2"/>
+  <circle cx="160" cy="136" r="10" fill="#f4f4f5"/>
+  <circle cx="194" cy="136" r="10" fill="#a1a1aa"/>
+  <circle cx="228" cy="136" r="10" fill="#7d97a3"/>
+  <text x="156" y="246" fill="#f4f4f5" font-family="Arial, sans-serif" font-size="58" font-weight="700">Matheus Foganholi</text>
+  <text x="156" y="318" fill="#a1a1aa" font-family="Arial, sans-serif" font-size="30">Java • Spring Boot • APIs REST • SQL</text>
   <rect x="156" y="374" width="450" height="8" rx="4" fill="url(#line)"/>
-  <text x="156" y="442" fill="#77ddff" font-family="Consolas, monospace" font-size="28">&gt; MF research lab ready</text>
+  <text x="156" y="442" fill="#f4f4f5" font-family="Consolas, monospace" font-size="28">&gt; portfolio ready</text>
 </svg>

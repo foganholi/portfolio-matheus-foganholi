@@ -21,8 +21,8 @@ describe('App', () => {
     render(<App />);
 
     expect(screen.getByRole('heading', { name: /Olá, eu sou Matheus Foganholi/i })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: /Módulos de pesquisa/i })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: /Núcleo tecnológico/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /^Projetos$/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /Tecnologias e habilidades/i })).toBeInTheDocument();
   });
 
   it('filters projects by search input', async () => {
@@ -43,7 +43,7 @@ describe('App', () => {
     expect(screen.getByRole('heading', { name: /Hi, I am Matheus Foganholi/i })).toBeInTheDocument();
 
     await user.click(screen.getByRole('button', { name: /Toggle theme/i }));
-    await waitFor(() => expect(document.documentElement.dataset.theme).toBe('light'));
+    await waitFor(() => expect(document.documentElement.dataset.theme).toBe('dark'));
   });
 
   it('uses terminal commands to show portfolio data', async () => {

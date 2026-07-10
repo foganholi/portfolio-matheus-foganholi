@@ -1,9 +1,7 @@
 import { AnimatePresence } from 'framer-motion';
 import { useEffect, useMemo, useState } from 'react';
-import { AmbientLab } from './components/AmbientLab';
 import { AppShell } from './components/AppShell';
 import { BootSequence } from './components/BootSequence';
-import { CustomCursor } from './components/CustomCursor';
 import { About } from './sections/About';
 import { Contact } from './sections/Contact';
 import { Education } from './sections/Education';
@@ -19,7 +17,7 @@ import { usePersistentState } from './hooks/usePersistentState';
 type Theme = 'light' | 'dark';
 
 export function App() {
-  const [theme, setTheme] = usePersistentState<Theme>('portfolio-theme', 'dark');
+  const [theme, setTheme] = usePersistentState<Theme>('portfolio-theme', 'light');
   const [locale, setLocale] = usePersistentState<Locale>('portfolio-locale', 'pt');
   const [showBoot, setShowBoot] = useState(() => {
     if (typeof window === 'undefined') {
@@ -44,8 +42,6 @@ export function App() {
       onThemeToggle={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
       onLocaleToggle={() => setLocale(locale === 'pt' ? 'en' : 'pt')}
     >
-      <AmbientLab />
-      <CustomCursor />
       <AnimatePresence>{showBoot ? <BootSequence onDone={() => setShowBoot(false)} skipLabel={t.bootSkip} /> : null}</AnimatePresence>
       <main id="main">
         <Hero locale={locale} t={t.hero} />

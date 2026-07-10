@@ -14,7 +14,7 @@ export const translations = {
     },
     hero: {
       greeting: 'Olá, eu sou Matheus Foganholi.',
-      eyebrow: 'Laboratório profissional',
+      eyebrow: 'Portfólio profissional',
       phrases: [
         'Desenvolvedor Java',
         'Desenvolvedor Back-end',
@@ -22,7 +22,7 @@ export const translations = {
         'Estudante de Sistemas de Informação',
         'Desenvolvedor Full Stack em formação',
       ],
-      projects: 'Explorar projetos',
+      projects: 'Ver projetos',
       journey: 'Ver trajetória',
       resume: 'Baixar currículo',
       contact: 'Entrar em contato',
@@ -30,12 +30,12 @@ export const translations = {
     },
     sections: {
       about: 'Sobre mim',
-      projects: 'Módulos de pesquisa',
-      skills: 'Núcleo tecnológico',
-      timeline: 'Linha de evolução',
+      projects: 'Projetos',
+      skills: 'Tecnologias e habilidades',
+      timeline: 'Trajetória',
       education: 'Formação',
       contact: 'Contato',
-      terminal: 'Console de consulta',
+      terminal: 'Busca rápida',
     },
     projects: {
       search: 'Buscar por nome ou tecnologia',
@@ -87,7 +87,7 @@ export const translations = {
     },
     hero: {
       greeting: 'Hi, I am Matheus Foganholi.',
-      eyebrow: 'Professional laboratory',
+      eyebrow: 'Professional portfolio',
       phrases: [
         'Java Developer',
         'Back-end Developer',
@@ -103,12 +103,12 @@ export const translations = {
     },
     sections: {
       about: 'About',
-      projects: 'Research modules',
-      skills: 'Technology core',
-      timeline: 'Evolution line',
+      projects: 'Projects',
+      skills: 'Technologies and skills',
+      timeline: 'Journey',
       education: 'Education',
       contact: 'Contact',
-      terminal: 'Query console',
+      terminal: 'Quick search',
     },
     projects: {
       search: 'Search by name or technology',

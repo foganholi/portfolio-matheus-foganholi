@@ -1,6 +1,6 @@
 # Portfólio Matheus Foganholi
 
-Portfólio profissional em formato de laboratório futurista interativo, criado para apresentar projetos, habilidades, formação, trajetória e contato de Matheus Foganholi com uma experiência visual diferente dos portfólios tradicionais.
+Portfólio profissional moderno, neutro e responsivo, criado para apresentar projetos, habilidades, formação, trajetória e contato de Matheus Foganholi com foco em clareza, confiança e bom acabamento visual.
 
 ## Tecnologias
 
@@ -96,13 +96,13 @@ Para domínio próprio, adicione o domínio no painel da Vercel e siga as instru
 
 ## Decisões de design
 
-- Interface inspirada em HUDs, laboratórios de IA, painéis holográficos e centros de pesquisa, sem copiar marcas, layouts ou assets de terceiros.
-- Paleta premium com azul profundo, preto, cinza escuro, ciano, branco e detalhes discretos em roxo.
-- Tema escuro como padrão e tema claro persistido no navegador.
+- Interface inspirada na qualidade visual de produtos como Vercel, Linear, GitHub, Notion e Apple Developer, sem copiar marcas, layouts ou assets de terceiros.
+- Paleta neutra com off-white, branco, cinzas, grafite, preto suave e um destaque discreto em azul acinzentado.
+- Tema claro como padrão e tema escuro persistido no navegador.
 - Idioma principal em português, com base preparada para inglês.
-- Projetos como módulos de pesquisa exploráveis, com destaque principal, busca, filtros e janela futurista de detalhes.
-- Console de consulta simulado, sem execução real de comandos.
-- Fundo vivo com partículas, grid 3D, luz volumétrica e cursor customizado leve.
+- Projetos organizados em cards profissionais, com destaque principal, busca, filtros e modal de detalhes.
+- Busca rápida simulada, sem execução real de comandos.
+- Componentes com bordas discretas, sombras suaves, bom espaçamento e interações leves.
 - Dados pessoais centralizados em arquivos editáveis.
 
 ## Melhorias futuras

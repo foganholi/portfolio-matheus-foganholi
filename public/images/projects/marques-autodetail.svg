@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="Demonstração Marques AutoDetail">
-  <rect width="960" height="540" fill="#030812"/>
-  <rect x="70" y="62" width="820" height="416" rx="24" fill="#091220" stroke="#3d5772"/>
-  <rect x="104" y="98" width="752" height="64" rx="16" fill="#0d1d32"/>
-  <rect x="104" y="196" width="218" height="228" rx="16" fill="#0d1d32"/>
-  <rect x="354" y="196" width="218" height="228" rx="16" fill="#0d1d32"/>
-  <rect x="604" y="196" width="252" height="228" rx="16" fill="#0d1d32"/>
-  <path d="M146 138h130M650 138h156" stroke="#77ddff" stroke-width="16" stroke-linecap="round"/>
-  <path d="M145 280c36-48 96-48 132 0v66H145v-66Z" fill="#8a6fff"/>
-  <circle cx="211" cy="238" r="34" fill="#37d5e2"/>
-  <path d="M396 250h132M396 300h104M396 350h142" stroke="#8ea1b5" stroke-width="18" stroke-linecap="round"/>
-  <path d="M646 252h158M646 304h112M646 356h132" stroke="#8ea1b5" stroke-width="18" stroke-linecap="round"/>
+  <rect width="960" height="540" fill="#18181b"/>
+  <rect x="70" y="62" width="820" height="416" rx="24" fill="#27272a" stroke="#52525b"/>
+  <rect x="104" y="98" width="752" height="64" rx="16" fill="#3f3f46"/>
+  <rect x="104" y="196" width="218" height="228" rx="16" fill="#3f3f46"/>
+  <rect x="354" y="196" width="218" height="228" rx="16" fill="#3f3f46"/>
+  <rect x="604" y="196" width="252" height="228" rx="16" fill="#3f3f46"/>
+  <path d="M146 138h130M650 138h156" stroke="#f4f4f5" stroke-width="16" stroke-linecap="round"/>
+  <path d="M145 280c36-48 96-48 132 0v66H145v-66Z" fill="#71717a"/>
+  <circle cx="211" cy="238" r="34" fill="#7d97a3"/>
+  <path d="M396 250h132M396 300h104M396 350h142" stroke="#a1a1aa" stroke-width="18" stroke-linecap="round"/>
+  <path d="M646 252h158M646 304h112M646 356h132" stroke="#a1a1aa" stroke-width="18" stroke-linecap="round"/>
 </svg>
