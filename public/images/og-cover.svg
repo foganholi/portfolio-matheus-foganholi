@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Portfólio Matheus Foganholi">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#07111f"/>
+      <stop offset="0.55" stop-color="#10213a"/>
+      <stop offset="1" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" x2="1">
+      <stop stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity=".18" stroke="#94a3b8">
+    <path d="M0 90h1200M0 180h1200M0 270h1200M0 360h1200M0 450h1200M0 540h1200"/>
+    <path d="M120 0v630M240 0v630M360 0v630M480 0v630M600 0v630M720 0v630M840 0v630M960 0v630M1080 0v630"/>
+  </g>
+  <rect x="116" y="92" width="968" height="446" rx="28" fill="#0f1f36" stroke="#334155" stroke-width="2"/>
+  <circle cx="160" cy="136" r="10" fill="#38bdf8"/>
+  <circle cx="194" cy="136" r="10" fill="#2dd4bf"/>
+  <circle cx="228" cy="136" r="10" fill="#8b5cf6"/>
+  <text x="156" y="246" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="58" font-weight="700">Matheus Foganholi</text>
+  <text x="156" y="318" fill="#94a3b8" font-family="Arial, sans-serif" font-size="30">Java • Spring Boot • APIs REST • SQL</text>
+  <rect x="156" y="374" width="450" height="8" rx="4" fill="url(#line)"/>
+  <text x="156" y="442" fill="#2dd4bf" font-family="Consolas, monospace" font-size="28">&gt; portfolio system ready</text>
+</svg>
