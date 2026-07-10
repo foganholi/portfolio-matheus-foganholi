@@ -31,7 +31,7 @@ describe('App', () => {
 
     await user.type(screen.getByPlaceholderText(/Buscar por nome ou tecnologia/i), 'Oficina');
 
-    expect(screen.getByRole('heading', { name: /Projeto Oficina/i })).toBeInTheDocument();
+    expect(screen.getAllByRole('heading', { name: /Projeto Oficina/i }).length).toBeGreaterThanOrEqual(1);
     expect(screen.queryByRole('heading', { name: /Car Hunter Fast/i })).not.toBeInTheDocument();
   });
 

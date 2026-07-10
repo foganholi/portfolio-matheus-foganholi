@@ -41,10 +41,33 @@ export function Projects({ locale, title, t }: ProjectsProps) {
       return matchesCategory && (!normalizedQuery || searchable.includes(normalizedQuery));
     });
   }, [activeCategory, locale, query]);
+  const featuredProject = filteredProjects[0] ?? projects[0];
 
   return (
     <section id="projects" className="content-section">
       <SectionHeading eyebrow="project.loader" title={title} />
+      <article className="project-feature">
+        <img src={featuredProject.image} alt={`Projeto em destaque: ${featuredProject.name}`} loading="lazy" />
+        <div>
+          <span>{locale === 'pt' ? 'Em destaque agora' : 'Now featured'}</span>
+          <h3>{featuredProject.name}</h3>
+          <p>{featuredProject.solution[locale]}</p>
+          <ul>
+            {featuredProject.technologies.slice(0, 6).map((tech) => (
+              <li key={tech}>{tech}</li>
+            ))}
+          </ul>
+          <div className="project-actions">
+            <button type="button" onClick={() => setSelectedProject(featuredProject)}>
+              {t.open}
+            </button>
+            <ExternalLink href={featuredProject.githubUrl}>
+              {t.code}
+              <ExternalLinkIcon aria-hidden="true" />
+            </ExternalLink>
+          </div>
+        </div>
+      </article>
       <div className="project-toolbar">
         <label className="search-field">
           <Search aria-hidden="true" />
@@ -72,6 +95,10 @@ export function Projects({ locale, title, t }: ProjectsProps) {
               <div>
                 <span>{project.status[locale]}</span>
                 <h3>{project.name}</h3>
+                <div className="project-card-meta">
+                  <small>{project.period}</small>
+                  <small>{project.category.slice(0, 2).join(' / ')}</small>
+                </div>
                 <p>{project.description[locale]}</p>
               </div>
               <ul>

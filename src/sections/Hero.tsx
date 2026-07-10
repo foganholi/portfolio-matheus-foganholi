@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { ArrowDown, Download, MessageSquare, Play, Star } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { profile } from '../data/profile';
+import { projects } from '../data/projects';
 import { socialLinks } from '../data/socialLinks';
 import type { Locale } from '../types';
 import { ExternalLink } from '../components/ExternalLink';
@@ -134,6 +135,14 @@ export function Hero({ locale, t }: HeroProps) {
                 <small>{String(index + 1).padStart(2, '0')}</small>
                 <span>{item.label}</span>
                 <em>{item.meta}</em>
+              </a>
+            ))}
+          </div>
+          <div className="now-playing-strip" aria-label={locale === 'pt' ? 'Projetos em cartaz' : 'Projects on display'}>
+            {projects.map((project) => (
+              <a key={project.id} href="#projects">
+                <img src={project.image} alt="" loading="lazy" />
+                <span>{project.name}</span>
               </a>
             ))}
           </div>
