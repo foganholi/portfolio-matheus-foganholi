@@ -14,7 +14,7 @@ export const translations = {
     },
     hero: {
       greeting: 'Olá, eu sou Matheus Foganholi.',
-      eyebrow: 'Catálogo profissional',
+      eyebrow: 'Laboratório profissional',
       phrases: [
         'Desenvolvedor Java',
         'Desenvolvedor Back-end',
@@ -22,7 +22,7 @@ export const translations = {
         'Estudante de Sistemas de Informação',
         'Desenvolvedor Full Stack em formação',
       ],
-      projects: 'Assistir destaques',
+      projects: 'Explorar projetos',
       journey: 'Ver trajetória',
       resume: 'Baixar currículo',
       contact: 'Entrar em contato',
@@ -30,12 +30,12 @@ export const translations = {
     },
     sections: {
       about: 'Sobre mim',
-      projects: 'Coleção de projetos',
-      skills: 'Coleções de habilidades',
-      timeline: 'Temporadas de aprendizado',
+      projects: 'Módulos de pesquisa',
+      skills: 'Núcleo tecnológico',
+      timeline: 'Linha de evolução',
       education: 'Formação',
       contact: 'Contato',
-      terminal: 'Busca rápida do catálogo',
+      terminal: 'Console de consulta',
     },
     projects: {
       search: 'Buscar por nome ou tecnologia',
@@ -87,7 +87,7 @@ export const translations = {
     },
     hero: {
       greeting: 'Hi, I am Matheus Foganholi.',
-      eyebrow: 'Professional catalog',
+      eyebrow: 'Professional laboratory',
       phrases: [
         'Java Developer',
         'Back-end Developer',
@@ -95,7 +95,7 @@ export const translations = {
         'Information Systems Student',
         'Full Stack Developer in training',
       ],
-      projects: 'Play highlights',
+      projects: 'Explore projects',
       journey: 'View journey',
       resume: 'Download resume',
       contact: 'Contact me',
@@ -103,12 +103,12 @@ export const translations = {
     },
     sections: {
       about: 'About',
-      projects: 'Project collection',
-      skills: 'Skill collections',
-      timeline: 'Learning seasons',
+      projects: 'Research modules',
+      skills: 'Technology core',
+      timeline: 'Evolution line',
       education: 'Education',
       contact: 'Contact',
-      terminal: 'Catalog quick search',
+      terminal: 'Query console',
     },
     projects: {
       search: 'Search by name or technology',

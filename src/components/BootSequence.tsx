@@ -7,10 +7,10 @@ interface BootSequenceProps {
 }
 
 const steps = [
-  'Abrindo catálogo...',
-  'Selecionando projetos em destaque...',
-  'Organizando trilhas de aprendizado...',
-  'Catálogo pronto.',
+  'Inicializando laboratório MF...',
+  'Calibrando ambiente holográfico...',
+  'Carregando módulos de pesquisa...',
+  'Sistema pronto.',
 ];
 
 export function BootSequence({ onDone, skipLabel }: BootSequenceProps) {

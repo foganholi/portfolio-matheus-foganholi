@@ -21,8 +21,8 @@ describe('App', () => {
     render(<App />);
 
     expect(screen.getByRole('heading', { name: /Olá, eu sou Matheus Foganholi/i })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: /Coleção de projetos/i })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: /Coleções de habilidades/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /Módulos de pesquisa/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /Núcleo tecnológico/i })).toBeInTheDocument();
   });
 
   it('filters projects by search input', async () => {

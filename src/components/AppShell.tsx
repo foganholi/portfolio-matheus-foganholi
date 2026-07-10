@@ -1,4 +1,4 @@
-import { Clapperboard, Github, Languages, Linkedin, Mail, Moon, Sun } from 'lucide-react';
+import { Github, Languages, Linkedin, Mail, Moon, Sun } from 'lucide-react';
 import type { Locale } from '../types';
 import { socialLinks } from '../data/socialLinks';
 import { ExternalLink } from './ExternalLink';
@@ -39,12 +39,16 @@ export function AppShell({ children, locale, theme, t, onThemeToggle, onLocaleTo
       </a>
       <header className="topbar">
         <a className="brand" href="#home" aria-label="Matheus Foganholi">
-          <Clapperboard aria-hidden="true" />
-          <span>Matheus.folio</span>
+          <span className="mf-mark" aria-hidden="true">
+            <span>M</span>
+            <span>F</span>
+          </span>
+          <span>Matheus Foganholi</span>
         </a>
         <nav aria-label="Navegação principal">
-          {navItems.map(([href, label]) => (
+          {navItems.map(([href, label], index) => (
             <a key={href} href={`#${href}`}>
+              <small>{String(index + 1).padStart(2, '0')}</small>
               {label}
             </a>
           ))}

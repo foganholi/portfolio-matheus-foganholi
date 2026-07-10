@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowDown, Download, MessageSquare, Play, Star } from 'lucide-react';
+import { ArrowDown, Download, MessageSquare, Radar, ScanLine, Sparkles } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { profile } from '../data/profile';
 import { projects } from '../data/projects';
@@ -84,7 +84,7 @@ export function Hero({ locale, t }: HeroProps) {
           </motion.strong>
           <div className="hero-actions">
             <a className="button primary" href="#projects">
-              <Play aria-hidden="true" />
+              <ScanLine aria-hidden="true" />
               {t.projects}
             </a>
             <a className="button" href="#timeline">
@@ -116,20 +116,28 @@ export function Hero({ locale, t }: HeroProps) {
           </div>
         </div>
         <div
-          className="catalog-spotlight"
-          aria-label={locale === 'pt' ? 'Prévia do catálogo profissional' : 'Professional catalog preview'}
+          className="lab-spotlight"
+          aria-label={locale === 'pt' ? 'Prévia do laboratório profissional' : 'Professional lab preview'}
         >
-          <div className="poster-card">
-            <span className="poster-label">{locale === 'pt' ? 'Destaque' : 'Featured'}</span>
-            <h2>Portfolio Collection</h2>
+          <motion.div
+            className="identity-core"
+            initial={{ opacity: 0, rotateX: 8, y: 28 }}
+            animate={{ opacity: 1, rotateX: 0, y: 0 }}
+            transition={{ delay: 0.28, duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+          >
+            <div className="core-orbit">
+              <span>MF</span>
+            </div>
+            <span className="poster-label">{locale === 'pt' ? 'Identidade ativa' : 'Identity active'}</span>
+            <h2>Research Lab</h2>
             <p>{profile.summary[locale].slice(0, 154)}...</p>
             <div className="rating-row">
-              <Star aria-hidden="true" />
+              <Sparkles aria-hidden="true" />
               <span>{locale === 'pt' ? 'Projetos reais' : 'Real projects'}</span>
-              <span>{locale === 'pt' ? 'Dados editáveis' : 'Editable data'}</span>
+              <span>{locale === 'pt' ? 'Sistema autoral' : 'Custom system'}</span>
             </div>
-          </div>
-          <div className="shelf-preview">
+          </motion.div>
+          <div className="lab-module-grid">
             {shelves.map((item, index) => (
               <a key={item.href} href={item.href}>
                 <small>{String(index + 1).padStart(2, '0')}</small>
@@ -138,10 +146,11 @@ export function Hero({ locale, t }: HeroProps) {
               </a>
             ))}
           </div>
-          <div className="now-playing-strip" aria-label={locale === 'pt' ? 'Projetos em cartaz' : 'Projects on display'}>
+          <div className="research-strip" aria-label={locale === 'pt' ? 'Módulos em análise' : 'Modules under analysis'}>
             {projects.map((project) => (
               <a key={project.id} href="#projects">
                 <img src={project.image} alt="" loading="lazy" />
+                <Radar aria-hidden="true" />
                 <span>{project.name}</span>
               </a>
             ))}
