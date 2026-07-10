@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="Demonstração Car Hunter Fast">
-  <rect width="960" height="540" fill="#08111f"/>
-  <rect x="58" y="50" width="844" height="440" rx="24" fill="#0f2138" stroke="#334155"/>
-  <rect x="92" y="92" width="246" height="356" rx="16" fill="#122944"/>
-  <rect x="366" y="92" width="486" height="170" rx="16" fill="#132c4a"/>
-  <rect x="366" y="286" width="486" height="162" rx="16" fill="#132c4a"/>
-  <path d="M132 354h166l-24-76c-7-22-24-38-45-43l-36-9-36 9c-21 5-38 21-45 43l-24 76Z" fill="#38bdf8" opacity=".9"/>
-  <circle cx="174" cy="360" r="24" fill="#07111f" stroke="#2dd4bf" stroke-width="8"/>
-  <circle cx="264" cy="360" r="24" fill="#07111f" stroke="#2dd4bf" stroke-width="8"/>
-  <g fill="#94a3b8">
+  <rect width="960" height="540" fill="#0c0c0b"/>
+  <rect x="58" y="50" width="844" height="440" rx="24" fill="#1e1d1b" stroke="#44403c"/>
+  <rect x="92" y="92" width="246" height="356" rx="16" fill="#2a2927"/>
+  <rect x="366" y="92" width="486" height="170" rx="16" fill="#2a2927"/>
+  <rect x="366" y="286" width="486" height="162" rx="16" fill="#2a2927"/>
+  <path d="M132 354h166l-24-76c-7-22-24-38-45-43l-36-9-36 9c-21 5-38 21-45 43l-24 76Z" fill="#bca67b" opacity=".92"/>
+  <circle cx="174" cy="360" r="24" fill="#0c0c0b" stroke="#d6cdbe" stroke-width="8"/>
+  <circle cx="264" cy="360" r="24" fill="#0c0c0b" stroke="#d6cdbe" stroke-width="8"/>
+  <g fill="#a8a297">
     <rect x="400" y="122" width="220" height="20" rx="10"/>
     <rect x="400" y="162" width="390" height="14" rx="7"/>
     <rect x="400" y="198" width="310" height="14" rx="7"/>
@@ -15,5 +15,5 @@
     <rect x="400" y="360" width="340" height="16" rx="8"/>
     <rect x="400" y="400" width="260" height="16" rx="8"/>
   </g>
-  <rect x="714" y="122" width="96" height="44" rx="12" fill="#2dd4bf"/>
+  <rect x="714" y="122" width="96" height="44" rx="12" fill="#d6cdbe"/>
 </svg>

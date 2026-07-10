@@ -1,4 +1,4 @@
-import { Code2, Github, Languages, Linkedin, Mail, Moon, Sun } from 'lucide-react';
+import { Clapperboard, Github, Languages, Linkedin, Mail, Moon, Sun } from 'lucide-react';
 import type { Locale } from '../types';
 import { socialLinks } from '../data/socialLinks';
 import { ExternalLink } from './ExternalLink';
@@ -39,8 +39,8 @@ export function AppShell({ children, locale, theme, t, onThemeToggle, onLocaleTo
       </a>
       <header className="topbar">
         <a className="brand" href="#home" aria-label="Matheus Foganholi">
-          <Code2 aria-hidden="true" />
-          <span>Matheus.dev</span>
+          <Clapperboard aria-hidden="true" />
+          <span>Matheus.folio</span>
         </a>
         <nav aria-label="Navegação principal">
           {navItems.map(([href, label]) => (

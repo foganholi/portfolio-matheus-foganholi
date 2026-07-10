@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowDown, Download, MessageSquare, PanelsTopLeft } from 'lucide-react';
+import { ArrowDown, Download, MessageSquare, Play, Star } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { profile } from '../data/profile';
 import { socialLinks } from '../data/socialLinks';
@@ -24,6 +24,33 @@ interface HeroProps {
 export function Hero({ locale, t }: HeroProps) {
   const [phraseIndex, setPhraseIndex] = useState(0);
   const resumeExists = useResumeStatus(profile.resumePath);
+  const shelves = [
+    {
+      href: '#projects',
+      label: locale === 'pt' ? 'Projetos' : 'Projects',
+      meta: locale === 'pt' ? '3 títulos' : '3 titles',
+    },
+    {
+      href: '#skills',
+      label: locale === 'pt' ? 'Tecnologias' : 'Technologies',
+      meta: locale === 'pt' ? '5 coleções' : '5 collections',
+    },
+    {
+      href: '#timeline',
+      label: locale === 'pt' ? 'Trajetória' : 'Journey',
+      meta: locale === 'pt' ? '7 episódios' : '7 episodes',
+    },
+    {
+      href: '#education',
+      label: locale === 'pt' ? 'Formação' : 'Education',
+      meta: locale === 'pt' ? 'em andamento' : 'in progress',
+    },
+    {
+      href: '#contact',
+      label: locale === 'pt' ? 'Contato' : 'Contact',
+      meta: locale === 'pt' ? 'canais abertos' : 'open channels',
+    },
+  ];
 
   useEffect(() => {
     const timer = window.setInterval(() => {
@@ -40,6 +67,12 @@ export function Hero({ locale, t }: HeroProps) {
           <span className="eyebrow">{t.eyebrow}</span>
           <h1>{t.greeting}</h1>
           <p>{profile.role[locale]}</p>
+          <div className="hero-meta" aria-label="Resumo profissional">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>APIs REST</span>
+            <span>SQL</span>
+          </div>
           <motion.strong
             key={t.phrases[phraseIndex]}
             initial={{ opacity: 0, y: 10 }}
@@ -50,7 +83,7 @@ export function Hero({ locale, t }: HeroProps) {
           </motion.strong>
           <div className="hero-actions">
             <a className="button primary" href="#projects">
-              <PanelsTopLeft aria-hidden="true" />
+              <Play aria-hidden="true" />
               {t.projects}
             </a>
             <a className="button" href="#timeline">
@@ -81,25 +114,28 @@ export function Hero({ locale, t }: HeroProps) {
             ))}
           </div>
         </div>
-        <div className="command-panel" aria-label="Painel de módulos">
-          <div className="panel-header">
-            <span />
-            <span />
-            <span />
-            <strong>system.navigator</strong>
+        <div
+          className="catalog-spotlight"
+          aria-label={locale === 'pt' ? 'Prévia do catálogo profissional' : 'Professional catalog preview'}
+        >
+          <div className="poster-card">
+            <span className="poster-label">{locale === 'pt' ? 'Destaque' : 'Featured'}</span>
+            <h2>Portfolio Collection</h2>
+            <p>{profile.summary[locale].slice(0, 154)}...</p>
+            <div className="rating-row">
+              <Star aria-hidden="true" />
+              <span>{locale === 'pt' ? 'Projetos reais' : 'Real projects'}</span>
+              <span>{locale === 'pt' ? 'Dados editáveis' : 'Editable data'}</span>
+            </div>
           </div>
-          <div className="module-grid">
-            {['Sobre mim', 'Projetos', 'Tecnologias', 'Experiência', 'Formação', 'Contato'].map((label, index) => (
-              <a key={label} href={`#${['about', 'projects', 'skills', 'timeline', 'education', 'contact'][index]}`}>
-                <small>0{index + 1}</small>
-                <span>{label}</span>
+          <div className="shelf-preview">
+            {shelves.map((item, index) => (
+              <a key={item.href} href={item.href}>
+                <small>{String(index + 1).padStart(2, '0')}</small>
+                <span>{item.label}</span>
+                <em>{item.meta}</em>
               </a>
             ))}
-          </div>
-          <div className="system-readout">
-            <span>status: online</span>
-            <span>stack: java / spring / sql / web</span>
-            <span>location: {profile.location[locale]}</span>
           </div>
         </div>
       </div>
