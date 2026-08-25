@@ -1,25 +1,18 @@
 import type { Education } from '../types';
 
 export const education: Education = {
-  course: { pt: 'Sistemas de Informação', en: 'Information Systems' },
+  course: { pt: 'Bacharelado em Sistemas de Informação', en: "Bachelor's Degree in Information Systems" },
   institution: {
-    pt: 'Instituição configurável em src/data/education.ts',
-    en: 'Configurable institution in src/data/education.ts',
+    pt: 'Centro Universitário Senac',
+    en: 'Centro Universitário Senac',
   },
-  status: { pt: 'Cursando', en: 'In progress' },
+  status: { pt: 'Cursando desde 2023', en: 'In progress since 2023' },
   extras: [
     {
-      title: { pt: 'Cursos complementares', en: 'Complementary courses' },
+      title: { pt: 'Formação técnica', en: 'Technical education' },
       description: {
-        pt: 'Espaço reservado para cursos concluídos ou em andamento.',
-        en: 'Reserved space for completed or ongoing courses.',
-      },
-    },
-    {
-      title: { pt: 'Certificados', en: 'Certificates' },
-      description: {
-        pt: 'Adicione apenas certificados reais quando estiverem disponíveis.',
-        en: 'Add only real certificates when available.',
+        pt: 'Ensino Médio Técnico em Tecnologia da Informação.',
+        en: 'Technical High School Diploma in Information Technology.',
       },
     },
     {
