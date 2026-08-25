@@ -14,6 +14,7 @@ export type ProjectCategory =
   | 'Full Stack'
   | 'Java'
   | 'Banco de dados'
+  | 'Mobile'
   | 'Desktop'
   | 'Estudos';
 
