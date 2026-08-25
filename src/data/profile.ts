@@ -32,6 +32,6 @@ export const profile: Profile = {
       value: { pt: 'São Paulo, Brasil', en: 'São Paulo, Brazil' },
     },
   ],
-  resumePath: '/documents/curriculo-matheus-foganholi.pdf',
+  resumePath: `${import.meta.env.BASE_URL}documents/curriculo-matheus-foganholi.pdf`,
   contactEmail: 'matheus.foganholi67@gmail.com',
 };
