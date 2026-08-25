@@ -9,7 +9,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/matheus-foganholi',
+    href: 'https://www.linkedin.com/in/matheus-foganholi67/',
     kind: 'linkedin',
   },
   {
