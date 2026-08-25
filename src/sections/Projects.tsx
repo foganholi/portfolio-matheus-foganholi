@@ -61,10 +61,12 @@ export function Projects({ locale, title, t }: ProjectsProps) {
             <button type="button" onClick={() => setSelectedProject(featuredProject)}>
               {t.open}
             </button>
-            <ExternalLink href={featuredProject.githubUrl}>
-              {t.code}
-              <ExternalLinkIcon aria-hidden="true" />
-            </ExternalLink>
+            {featuredProject.githubUrl ? (
+              <ExternalLink href={featuredProject.githubUrl}>
+                {t.code}
+                <ExternalLinkIcon aria-hidden="true" />
+              </ExternalLink>
+            ) : null}
           </div>
         </div>
       </article>
@@ -110,10 +112,12 @@ export function Projects({ locale, title, t }: ProjectsProps) {
                 <button type="button" onClick={() => setSelectedProject(project)}>
                   {t.open}
                 </button>
-                <ExternalLink href={project.githubUrl}>
-                  {t.code}
-                  <ExternalLinkIcon aria-hidden="true" />
-                </ExternalLink>
+                {project.githubUrl ? (
+                  <ExternalLink href={project.githubUrl}>
+                    {t.code}
+                    <ExternalLinkIcon aria-hidden="true" />
+                  </ExternalLink>
+                ) : null}
               </div>
             </div>
           </motion.article>
@@ -197,8 +201,8 @@ function ProjectModal({ project, locale, t, onClose }: ProjectModalProps) {
           </div>
         ) : null}
         <div className="project-actions">
-          <ExternalLink href={project.githubUrl}>{t.code}</ExternalLink>
-          <ExternalLink href={project.liveUrl ?? ''}>{t.live}</ExternalLink>
+          {project.githubUrl ? <ExternalLink href={project.githubUrl}>{t.code}</ExternalLink> : null}
+          {project.liveUrl ? <ExternalLink href={project.liveUrl}>{t.live}</ExternalLink> : null}
         </div>
       </motion.article>
     </motion.div>
